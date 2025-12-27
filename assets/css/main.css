@@ -1509,3 +1509,40 @@ section,
   }
 }
 
+
+.testimonial-img {
+  width: 100px;          
+  height: 100px;          
+  object-fit: cover;      
+  border-radius: 10px;    
+  box-shadow: 0 4px 6px rgba(0,0,0,0.1);  
+  margin: 5px;           
+  transition: transform 0.3s;  
+}
+
+.testimonial-img:hover {
+  transform: scale(1.1);  
+}
+
+ 
+.testimonial-item .col-lg-2 {
+  display: flex;
+  flex-direction: row;       
+  flex-wrap: wrap;           
+  justify-content: center;    
+  gap: 10px;                  
+}
+
+ 
+@media (max-width: 768px) {
+  .testimonial-img {
+    width: 80px;
+    height: 80px;
+  }
+
+  .testimonial-item .col-lg-2 {
+    flex-direction: row;
+    justify-content: center;
+  }
+}
+
