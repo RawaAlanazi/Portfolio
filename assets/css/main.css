@@ -1509,35 +1509,35 @@ section,
   }
 }
 
-
+ /* أساسي لكل صور المبادرات */
 .testimonial-img {
-  width: 100px;          
-  height: 100px;          
-  object-fit: cover;      
-  border-radius: 10px;    
-  box-shadow: 0 4px 6px rgba(0,0,0,0.1);  
-  margin: 5px;           
-  transition: transform 0.3s;  
+  width: 200px;          /* حجم أكبر للعرض */
+  height: 200px;         /* حجم أكبر للارتفاع */
+  object-fit: cover;     /* للحفاظ على نسبة الصورة وملء الإطار */
+  border-radius: 10px;   /* حواف دائرية خفيفة */
+  box-shadow: 0 4px 6px rgba(0,0,0,0.1); /* ظل خفيف */
+  margin: 5px;           /* مسافة بسيطة بين الصور */
+  transition: transform 0.3s; /* تأثير تكبير عند المرور */
 }
 
 .testimonial-img:hover {
-  transform: scale(1.1);  
+  transform: scale(1.1); /* تكبير الصورة عند المرور */
 }
 
- 
+/* إذا كان هناك أكثر من صورة داخل نفس العمود */
 .testimonial-item .col-lg-2 {
   display: flex;
   flex-direction: row;       
-  flex-wrap: wrap;           
+  flex-wrap: wrap;            
   justify-content: center;    
-  gap: 10px;                  
+  gap: 15px;                  
 }
 
- 
+/* responsive للشاشات الصغيرة */
 @media (max-width: 768px) {
   .testimonial-img {
-    width: 80px;
-    height: 80px;
+    width: 120px;
+    height: 120px;
   }
 
   .testimonial-item .col-lg-2 {
